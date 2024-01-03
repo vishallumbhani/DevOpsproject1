@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Removal in Manchester</title>
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    <link rel="stylesheet" href="css/StyleSheet2.css">
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            position:center;
+        }
+       
+
+            button:hover {
+                background-color: #3a3833;
+            }
+        .container {
+            height: 50px;
+            position: relative;
+            border: 0px solid green;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Donation Form</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="nav-content">
+                <a href="HtmlPage3.html">Donate</a>
+                <a href="HtmlPage4.html">Looking For</a>
+
+            </div>
+        </div>
+        <a href="HtmlPage7.html">Contact</a>
+        <a href="HtmlPage8.html">AboutUs</a>
+    </nav>
+
+    <form action="process_form_donate.php" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+        <small>Enter a 10-digit mobile number.</small>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="Postcode">Postcode:</label>
+        <input type="text" id="Postcode" name="Postcode" required>
+
+        <label for="appointmentDate">Preferred Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+        <label for="appointmentTime">Preferred Time:</label>
+        <select id="appointmentTime" name="appointmentTime" required>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+        <div class="container">
+            <div class="center">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
